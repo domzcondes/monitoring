@@ -6,8 +6,6 @@ Monitoring Solution for Informatica PowerCenter and Informatica Master Data Mana
 - Monitors PowerCenter services, workflows, and sessions
 - Monitors MDM applications and ORS batch jobs
 - Sends results to Microsoft Teams via webhooks
-
-Refactored into a single executable script (no Jupyter dependencies).
 """
 
 import os
