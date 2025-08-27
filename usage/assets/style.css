@@ -1,0 +1,87 @@
+/* Body and layout basics */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+h1, h2, h4 {
+    color: #333;
+}
+
+/* Responsive 2-column grid with tight 10px gap */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Each graph block (CPU, RAM, Disks) */
+.metric-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Metric cards */
+.card {
+    background-color: #f9f9f9;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+/* Flex container for metrics */
+.metric-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Graph container for pairs (bar + pie) */
+.graph-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Half-width graphs that wrap nicely on smaller screens */
+.graph-half {
+    flex: 1 1 750px;   /* grow, shrink, base width */
+    min-width: 300px;
+    max-width: 750px;
+}
+
+/* Spacing between Gantt & Line */
+.graph-section {
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+/* Full-width responsive graphs */
+.graph-full {
+    width: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+.graph-tall {
+    max-height: 800px;
+	overflow-y: auto;
+    width: 100%;
+	max-width: 1520px;
+    margin: 20px auto;
+}
